@@ -4,7 +4,7 @@ require("dotenv").config();
 async function callAPI() {
   return axios.get("http://api.football-data.org/v4/competitions/PL", {
     headers: {
-      "X-Auth-Token": process.env.NETLIFY_API_KEY,
+      "X-Auth-Token": process.env.NETLIFY_FOOTBALL_API_KEY,
     },
   });
 }
