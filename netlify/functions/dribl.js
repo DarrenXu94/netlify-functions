@@ -21,7 +21,6 @@ async function scrape() {
       const browser = await playwright.chromium.launch({
         headless: true, // setting this to true will not run the UI
         slowMo: 1000,
-        channel: "chrome",
       });
 
       const page = await browser.newPage();
