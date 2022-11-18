@@ -69,12 +69,11 @@ exports.handler = async (event, context, callback) => {
     await page.click(
       "#__layout > div > div.nuxt-container.position-relative > section.section.page-filter > div > div.pageFilter.d-none.d-lg-flex.flex-wrap > div:nth-child(2)"
     );
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(1000);
 
     await page.click(
       "#__layout > div > div.nuxt-container.position-relative > section.section.page-filter > div > div.pageFilter.d-none.d-lg-flex.flex-wrap > div:nth-child(2) > div.filter-dropdown.shadow.w-100.d-block.position-absolute.top-100.ps.ps--active-x.ps--active-y > ul > li:nth-child(3)"
     );
-    await page.waitForTimeout(2000);
 
     // theTitle = await page.title();
 
